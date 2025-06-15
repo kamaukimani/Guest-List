@@ -5,24 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Guest List Manager</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./src/index.js"defer></script>
+    <script src="./src/index.js" defer></script>
 </head>
 <body>
-    <h1>Am happy because am going to add something here</h1>
-    <p>This will be my introduction paragrapgh and am gonna add alot here
-        see you later 
+    <h1>Event Guest List Manager</h1>
+    <p id="p1">This application provides a simple and user-friendly interface<br>
+     that allows users to manage a guest list with ease. Users can add<br>
+      guest names to the list and remove them at any time, making it <br>
+      ideal for events, parties, or any occasion that requires guest tracking.<br>
+       With its straightforward design and functionality, this app ensures a <br>
+       hassle-free experience in keeping your guest list organized and up to date.
     </p>
-    <h2>Hello my guest welcome to my application</h2>
-    <p>Am happy to be your guide on how to be booked by us. I hope 
-        you will enjoy and be happy for me 
+    <h2>Hello there, welcome to my application...</h2>
+    <p id="p2"><strong>To add a new guest, start by entering the guest's first name, last name, email, and age <br>
+        into the appropriate input fields. Then, select their relationship to you whether they are a <br>
+        family member, friend, or colleague. Once all the information is entered, click the Add Guest button <br>
+        to include them in the guest list. After you have updated the list and need to make changes to a guest’s <br>
+        first or last name, simply click the Edit button next to their name. To update their attendance status,<br>
+         use the Toggle RSVP button.If you wish to remove someone from the list entirely, click the Remove button.</strong>
     </p>
-    <form id="guest">
-        <input type="text" id="fname" placeholder="Enter First name" required> <br>
-        <input type="text" id="lname" placeholder="Enter Lirst name" required> <br>
-        <input type="email" id="email" placeholder="Enter Email" required> <br>
-        <input type="number" id="age" placeholder="Enter Age" required> <br>
-        <input type="submit" value="Add Guest">
-    </form>
-    <ol id="guestlist"></ol>
+    
+    <div class="formdiv">
+        <form id="guest">
+            <input type="text" id="fname" placeholder="Enter First name" required> <br>
+            <input type="text" id="lname" placeholder="Enter Lirst name" required> <br>
+            <input type="email" id="email" placeholder="Enter Email" required> <br>
+            <input type="number" id="age" placeholder="Enter Age" required> <br>
+            <select id="category" required multiple>
+                <option>Friend</option>
+                <option>Family</option>
+                <option>Colleague</option>
+            </select> <br>
+            <input type="submit" value="Add Guest" id="submit">
+        </form>
+        <ol id="guestlist"></ol>
+    </div>
 </body>
 </html>
